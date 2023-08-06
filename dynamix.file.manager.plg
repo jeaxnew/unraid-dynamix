@@ -1,0 +1,295 @@
+<?xml version='1.0' standalone='yes'?>
+
+<!DOCTYPE PLUGIN [
+<!ENTITY name      "dynamix.file.manager">
+<!ENTITY author    "Bergware">
+<!ENTITY version   "2023.06.01">
+<!ENTITY pluginURL "https://ghproxy.com/https://raw.githubusercontent.com/bergware/dynamix/master/unRAIDv6/&name;.plg">
+<!ENTITY source    "/boot/config/plugins/&name;/&name;">
+<!ENTITY MD5       "0ccdbeedbe25386d3b0c5793e721ee9f">
+]>
+
+<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" min="6.10.0">
+
+<CHANGES>
+##&name;
+
+###&version;
+- Fixed user string not displayed in file tree
+
+###2023.04.25
+- Made compatible with latest Unraid 6.12 version
+
+###2023.04.11
+- Added missing templates for scheduled jobs
+- Updated translation operation in file_manager
+- Minor visual enhancement for buttons
+
+###2023.04.10
+- Added scheduled jobs
+- Several bug fixes
+
+###2023.04.08
+- Fixed various regression bugs
+
+###2023.04.07
+- Improved "Smart Move" operation
+- Fixed search location sometimes missing
+- Added items count in search results
+
+###2023.04.06
+- Added multi selection for search function
+- Added search function to folder menu
+- Added search function can be minimized and followed in footer
+- Several minor fixes
+
+###2023.04.03
+- Fixed regression error
+
+###2023.04.02
+- Added dialog window of background operation can be opened from any page
+- Fixed location detection in size calculation
+- Minor bug fixes
+
+###2023.03.31
+- Added specific ZFS operation when moving or deleting ZFS shares
+
+###2023.03.26
+- Fixed ACE editor settings menu appearance
+
+###2023.03.25
+- Minor visual enhancements
+- Fixed possible installation error
+
+###2023.03.24
+- Fixed regression error in permissions and owner operations
+- Fixed regression error in search function
+- Added list multiple sources when more than one object is selected
+
+###2023.03.23
+- Added "smart" move: use 'mv' when source and target are in the same location (not used for shares)
+- Changed dialog 'close' to 'minimize'
+- Added progress indicator in the footer
+- Fixed permissions and owner of uploaded files
+- Fixed simultaneous uploads from different sessions
+- Added error message when file upload fails
+- Fixed permissions and owner of created folders
+- Improved single file/folder logic
+
+###2023.03.22
+- Fixed bulk operations for folders
+
+###2023.03.17
+- Removed redundant headers in templates
+
+###2023.03.01
+- Added speed indicator to File Upload
+
+###2023.02.28
+- Updated ACE editor to version 1.15.2
+- Added "Use sparse option" for copy and move operations
+- Fixed context menu indicator position in Unraid 6.12
+- Added preset file name on download in file preview
+
+###2023.02.19
+- PHP 8.2 corrections
+
+###2023.02.05
+- Updated ACE editor to version 1.14.0
+- Support for upcoming Unraid version 6.12
+
+###2022.11.10
+- Updated ACE editor to version 1.12.5
+- Replace external base64 function with internal btoa function
+
+###2022.09.07
+- Updated ACE editor to version 1.10.1
+
+###2022.08.26
+- Updated ACE editor to version 1.9.6
+
+###2022.07.17
+- Added right-click menu to browse header which displays full path
+
+###2022.07.09
+- Changed size of editor window to 800x1200 or 600x900
+
+###2022.07.07
+- Updated ACE editor to version 1.7.1
+- Removed 6.10 max Unraid version
+
+###2022.06.28
+- Fixed corrupted upload of binary files
+
+###2022.06.11
+- Updated ACE editor to version 1.6.0
+
+###2022.06.07
+- Minor code optimizations
+
+###2022.06.05
+- Updated ACE editor to version 1.5.3
+
+###2002.05.23
+- Minor code optimizations
+- Adjusted font size of editor
+
+###2022.05.22
+- Fixed - do not overwrite existing file while uploading, create a new file instead
+- Minor code optimizations
+- Minor bug fixes
+
+###2022.05.21
+- Fixed screen not updated after Upload function finished
+- Fixed long list may crash
+
+###2022.05.19
+- Make rows all same height in folder listing
+
+###2022.05.18
+- Change minimum Unraid version to 6.10.0 (stable release)
+- Fixed bug in calculation function when only files are selected
+
+###2022.05.17
+- Fixed potential file timestamp misreading
+- Fixed regression error in calculation function
+
+###2022.05.16
+- Improved search function - faster results
+
+###2022.05.15
+- Added disk location in search results
+- Updated browse function, attempt to fix uncaught error
+
+###2022.05.14
+- Added Search function
+
+###2022.05.13
+- Fixed file attributes not updated after editing
+
+###2022.05.11
+- Fixed regression error in upload funcion - button was not reset after action completed
+
+###2022.05.10
+- Fixed context menu can be partially hidden
+
+###2022.05.06
+- Added selectable browse header
+- Removed Basic/Advanced view
+- Fixed alignmnt of invalid folder
+
+###2022.05.02
+- Fixed: select all ignores filtered files
+- Changed: highlighting of selected rows
+- Changed: use latest $.cookies assignments
+- Changed: minimum Unraid version 6.10.0-rc5
+
+###2022.04.23
+- Fixed regression error
+
+###2022.04.17
+- Code optimization and fixes
+
+###2022.04.15
+- Smart display updates for improved user experience
+
+###2022.04.02
+- Added zip files are downloaded by clicking on their name
+
+###2022.03.26
+- Improved editor file loading
+
+###2022.03.25
+- Improved Window expand/compress when editing files
+- Show PROCEED button as disabled when operation is in progress
+
+###2022.03.24
+- Show Unraid wave when loading of files takes longer
+- Added device name in header of contextmenu for devices
+- Minor optimizations
+
+###2022.03.23
+- Added file viewer for files with extension: .pdf, .jpg, png, .jpeg, .gif
+- Minor visual enhancements
+
+###2022.03.21
+- Fixed progress indicator for Move and Copy operations
+
+###2022.03.19
+- More refinements for the text file editor
+- Fixed editing of files containing single quotes
+- Highlight selected row when hovering over list
+
+###2022.03.18
+- Added Text File Editor (ace.js)
+- Minor visual enhancements
+
+###2022.03.16
+- Added support for Unassigned Devices (UD) 'rootshare'
+- Rearranged context menu to separate common actions
+
+###2022.03.14
+- Allow Unassigned Devices to access both disk shares and user shares
+
+###2022.03.11
+- Adjusted min/max Unraid version for the launch of this plugin
+
+###2022.03.03
+- Initial release
+</CHANGES>
+
+<!--
+Copyright 2023, Bergware International
+Dynamix File Manager - File management features added to the GUI Browser function
+-->
+
+<!-- PRE-INSTALL SCRIPT -->
+<FILE Run="/bin/bash">
+<INLINE>
+# Remove old 'source' packages
+MD5=$(md5sum &source;.txz 2>/dev/null|grep -Po '^\S+')
+if [[ $MD5 != &MD5; ]]; then
+  rm -f &source;*.txz
+  pkill file_manager
+  if [[ -e /var/run/nchan.pid ]]; then
+    sed -ri '/file_manager$/d' /var/run/nchan.pid
+  fi
+fi
+</INLINE>
+</FILE>
+
+<!-- SOURCE PACKAGE -->
+<FILE Name="&source;.txz" Run="upgradepkg --install-new --reinstall">
+<URL>https://ghproxy.com/https://raw.githubusercontent.com/bergware/dynamix/master/archive/&name;.txz</URL>
+<MD5>&MD5;</MD5>
+</FILE>
+
+<!-- POST-INSTALL SCRIPT -->
+<FILE Run="/bin/bash">
+<INLINE>
+echo ""
+echo "-----------------------------------------------------------"
+echo " Plugin &name; is installed."
+echo " This plugin requires Dynamix webGui to operate"
+echo " Copyright 2023, Bergware International"
+echo " Version: &version;"
+echo "-----------------------------------------------------------"
+echo ""
+</INLINE>
+</FILE>
+
+<!-- REMOVE SCRIPT -->
+<FILE Run="/bin/bash" Method="remove">
+<INLINE>
+# stop and remove Nchan script
+pkill file_manager
+if [[ -e /var/run/nchan.pid ]]; then
+  sed -ri '/file_manager$/d' /var/run/nchan.pid
+fi
+
+# Uninstall the 'source' package
+removepkg &name;
+</INLINE>
+</FILE>
+
+</PLUGIN>
